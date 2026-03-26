@@ -12,6 +12,7 @@ app.UseSwaggerUI();
 app.MapGet("/", () => new
 {
     message = "API is running",
+    swagger = "enabled",
     utc = DateTime.UtcNow
 });
 
